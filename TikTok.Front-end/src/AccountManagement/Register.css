@@ -1,0 +1,45 @@
+.register-container {
+    background-color: #f8f9fa;
+    /* Background color similar to TikTok */
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Soft shadow effect */
+}
+
+.register-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    /* Dark text color */
+}
+
+.ant-form-item-label {
+    text-align: left;
+}
+
+.ant-input {
+    border-radius: 6px;
+}
+
+.ant-form-item {
+    margin-bottom: 16px;
+}
+
+.ant-btn-primary {
+    background-color: #ff4500;
+    /* TikTok primary color */
+    border-color: #ff4500;
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+    background-color: #ff5722;
+    /* Darker shade for hover/focus */
+    border-color: #ff5722;
+}
