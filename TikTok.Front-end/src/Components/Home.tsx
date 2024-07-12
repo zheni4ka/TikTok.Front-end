@@ -1,12 +1,12 @@
 import React from "react";
-import {Layout} from "antd";
+import {Layout as LayoutAntd} from "antd";
 
 const Home : React.FC = () => {
-    return
-    (
-        <>
-        </>
-    )
+    return (
+       <div style={{background: 'gray'}}>
+            <h1 style={{textAlign: 'center'}}>HELLO WORLD</h1>
+       </div>
+    );
 };
 
 export default Home;

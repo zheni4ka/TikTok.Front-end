@@ -13,6 +13,11 @@
   }
 }
 
+.LeftSide Footer
+{
+  margin-block: -5px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -26,6 +31,20 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.ItemMenu {
+  height: 50px;
+}
+
+.Login {
+  background-color: #ff3b5c;
+  width: 120px;
+  height: 35px;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  border: #ff3b5c;
 }
 
 @keyframes App-logo-spin {
