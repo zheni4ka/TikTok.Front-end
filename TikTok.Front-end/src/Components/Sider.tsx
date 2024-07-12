@@ -27,6 +27,7 @@ const Sider: React.FC = () =>
                     Menu: {
                         itemHeight: 60,
                         darkItemBg: 'black',
+                        
                     },
                  },
                  token: {
