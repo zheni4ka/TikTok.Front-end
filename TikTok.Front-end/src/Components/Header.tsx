@@ -18,16 +18,16 @@ const Header : React.FC = () => {
                         colorBorder: '#2f2f2f',
                         colorTextBase: '#fcfcfc',
                         fontSize: 18,
-                        borderRadius: 15
+                        borderRadius: 25,
+                        controlHeight: 50
                     }
                 }}
                 >
-                    <Search placeholder="Search user here" allowClear style={{ width: 500, marginInline: 'auto', paddingTop: '15px', color: 'white'}} />
+                    <Search placeholder="Search" allowClear style={{ width: 500, marginInline: 'auto',  paddingTop: '10px', color: 'white'}} />
                 </ConfigProvider>
                 
                 <div style={{display : 'flex', justifyContent: 'flex-end', marginTop: 'auto', gap: 10}}>
                     <Button className="Login">Login</Button>
-                    <Button className="Login" style={{background: '#2f2f2f'}}>Register</Button>
                 </div>
         </HeaderAntd>
     );
