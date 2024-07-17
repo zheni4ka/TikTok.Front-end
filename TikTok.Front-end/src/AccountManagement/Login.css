@@ -1,14 +1,6 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f8f9fa;
-}
-
 .login-container {
     background: white;
-    padding: 2rem;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
@@ -16,27 +8,28 @@ body {
 }
 
 .login-title {
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
 .form-control {
     width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
+    padding: 10px;
+    margin-top: 10px;
     border: 1px solid #ced4da;
-    border-radius: 0.25rem;
+    border-radius: 11px;
 }
 
 .btn-login {
     width: 100%;
     background-color: #fe2c55;
     border-color: #fe2c55;
-    padding: 0.5rem;
+    padding: 20px;
     color: white;
     font-size: 1rem;
-    border-radius: 0.25rem;
+    border-radius: 10px;
     cursor: pointer;
 }
 

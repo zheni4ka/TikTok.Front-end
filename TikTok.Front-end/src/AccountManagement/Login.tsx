@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { Button, Form, Input, message } from 'antd';
 import axios from 'axios';
+import { UserOutlined, UserAddOutlined, GoogleOutlined, TikTokOutlined, LockOutlined } from '@ant-design/icons';
 import './Login.css';
+
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
   const handleLogin = async (values: { email: string; password: string }) => {
     try {
       const response = await axios.post('/api/account/login', values);
@@ -15,6 +18,7 @@ const Login: React.FC = () => {
       message.error('Invalid login or password!');
     }
   };
+
   return (
     <div className="login-container">
       <div className="login-title">Log in to TikTok</div>
@@ -28,6 +32,7 @@ const Login: React.FC = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email address"
+            prefix={<UserOutlined />}
           />
         </Form.Item>
         <Form.Item
@@ -39,6 +44,7 @@ const Login: React.FC = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Enter your password"
+            prefix={<LockOutlined />}
           />
         </Form.Item>
         <Form.Item>
@@ -48,4 +54,5 @@ const Login: React.FC = () => {
     </div>
   );
 };
+
 export default Login;

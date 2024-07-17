@@ -10,20 +10,19 @@ const { Content } = LayoutAntd;
 
 const Layout: React.FC = () => {
     return (
-        <LayoutAntd className="Layout">
+        <LayoutAntd className="Layout" style={{background: 'black', height: window.innerHeight}}>
             <Header />
-            <div style={{display: 'flex', flexDirection: 'row'}}>
-            <div>
-                <ConfigProvider
-                    
-                >
-                    <Sider/>
-                    <Footer />
-                </ConfigProvider>
+            <div style={{display: 'flex', flexDirection: 'row', height: window.innerHeight}}>
+            
+            <div style={{display: 'flex', flexDirection: 'column', width: 300}}>
+                <Sider/>
+                <Footer/>
             </div>
+            
             <Content className='Main'>
                 <Outlet />
             </Content>
+
             </div>
         </LayoutAntd>
     );

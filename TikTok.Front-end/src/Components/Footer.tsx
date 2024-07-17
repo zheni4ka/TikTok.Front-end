@@ -5,7 +5,7 @@ const { Footer: FooterAntd } = LayoutAntd;
 const Footer : React.FC = () => {
     return (
         <div style={{background: 'black'}}>
-            <h5 style={{textAlign : 'left'}}>TikTok {new Date().getFullYear()}</h5>
+            <h5 style={{textAlign : 'center', color: 'white'}}>@ TikTok {new Date().getFullYear()}</h5>
         </div>
     )
 };

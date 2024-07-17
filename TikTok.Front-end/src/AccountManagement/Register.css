@@ -1,45 +1,39 @@
 .register-container {
-    background-color: #f8f9fa;
-    /* Background color similar to TikTok */
+    background: white;
     padding: 20px;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Soft shadow effect */
+    max-width: 400px;
+    width: 100%;
 }
 
 .register-title {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
     margin-bottom: 20px;
-    color: #333;
-    /* Dark text color */
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
-.ant-form-item-label {
-    text-align: left;
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 11px;
 }
 
-.ant-input {
-    border-radius: 6px;
+.btn-register {
+    width: 100%;
+    background-color: #fe2c55;
+    border-color: #fe2c55;
+    padding: 20px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.ant-form-item {
-    margin-bottom: 16px;
-}
-
-.ant-btn-primary {
-    background-color: #ff4500;
-    /* TikTok primary color */
-    border-color: #ff4500;
-}
-
-.ant-btn-primary:hover,
-.ant-btn-primary:focus {
-    background-color: #ff5722;
-    /* Darker shade for hover/focus */
-    border-color: #ff5722;
+.btn-register:hover {
+    background-color: #d0021b;
+    border-color: #d0021b;
 }
