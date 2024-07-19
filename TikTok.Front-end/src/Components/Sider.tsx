@@ -6,15 +6,17 @@ import
     CompassOutlined
 } from '@ant-design/icons'
 import type { MenuProps} from 'antd';
+import { Link } from "react-router-dom";
+
 import {ConfigProvider, Button, Menu as MenuAntd} from "antd";
 
 type MenuItem = Required<MenuProps>['items'][number];
 
 const items: MenuItem[] =
 [
-    { key: '1', icon: <HomeOutlined style={{fontSize: 22, padding: '5px'}}/>, label: 'Recommended' },
-    { key: '2', icon: <TeamOutlined style={{fontSize: 22, padding: '5px'}}/>, label: 'Subscribers' },
-    { key: '3', icon: <CompassOutlined style={{fontSize: 22, padding: '5px'}}/>, label: 'Watch' }
+    { key: '1', icon: <HomeOutlined style={{fontSize: 22, padding: '5px'}}/>, label: <Link to='/recommended'>Recommended</Link> },
+    { key: '2', icon: <TeamOutlined style={{fontSize: 22, padding: '5px'}}/>, label: <Link to="/subscribes">Subscribes</Link> },
+    { key: '3', icon: <CompassOutlined style={{fontSize: 22, padding: '5px'}}/>, label: <Link to='/watch'>Watch</Link> }
 ]
 
 const Sider: React.FC = () => 
