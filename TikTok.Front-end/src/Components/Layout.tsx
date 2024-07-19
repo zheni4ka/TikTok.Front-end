@@ -10,10 +10,10 @@ const { Content } = LayoutAntd;
 
 const Layout: React.FC = () => {
     return (
-        <LayoutAntd className="Layout" style={{background: 'black', height: window.innerHeight, overflow: 'scroll'}}>
+        <LayoutAntd className="Layout" style={{background: 'black', height: window.innerHeight, overflow: 'hidden'}}>
             <Header />
             
-            <div style={{display: 'flex', flexDirection: 'row', height: window.innerHeight}}>
+            <div style={{display: 'grid', gridTemplateColumns: '300px 1fr', height: window.innerHeight}}>
             
             <div style={{display: 'flex', flexDirection: 'column', width: 300}}>
                 <Sider/>
