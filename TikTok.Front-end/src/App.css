@@ -56,3 +56,25 @@
     transform: rotate(360deg);
   }
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+.Video
+{
+  margin-inline: auto;  
+  width: '300px'; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 5px;
+}
+
+.btn
+{
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+}
