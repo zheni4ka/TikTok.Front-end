@@ -1,10 +1,10 @@
 import React from "react";
 import {Layout as LayoutAntd} from "antd";
-
+import VideoPlayer from "./VideoPlayer";
 const Home : React.FC = () => {
     return (
-       <div style={{background: 'gray'}}>
-            <h1 style={{textAlign: 'center'}}>HELLO WORLD</h1>
+       <div style={{width: '100%', marginTop: '50px'}}>
+            <VideoPlayer/>
        </div>
     );
 };

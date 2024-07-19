@@ -45,6 +45,7 @@
   font-size: large;
   font-weight: bold;
   border: #ff3b5c;
+  margin-block: auto;
 }
 
 @keyframes App-logo-spin {
