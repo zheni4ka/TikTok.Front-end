@@ -39,7 +39,7 @@ const [showRegister, setShowRegister] = useState(false);
         setShowLogin(false);
       };
     return (
-        <HeaderAntd style={{ display: 'grid', width: '100%', gridTemplateColumns: '400px 650px 400px', gridTemplateRows: '50px', background: 'black', borderBottom: '2px solid gray', height: '70px'}}>
+        <HeaderAntd style={{ display: 'grid', width: '100%', gridTemplateColumns: '1fr 1fr 1fr', gridTemplateRows: '50px', background: 'black', borderBottom: '2px solid gray', height: '70px'}}>
                 <Link to="/"><img style={{width: '200px', height: '60px'}} src="https://www.logo.wine/a/logo/TikTok/TikTok-Logomark%26Wordmark-White-Dark-Background-Logo.wine.svg"/></Link>
                 <ConfigProvider
                     theme={{

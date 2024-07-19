@@ -15,19 +15,45 @@ const VideoPlayer :  React.FC = (id, publicId, ...props) => {
   }, []);
 
   return (
-    <div style={{ width: '1000px', display: 'flex', flexDirection: 'column'}}>
+    <div style={{ width: '320px', display: 'flex', flexDirection: 'column', marginInline: 'auto', overflow: 'scroll', height: '100vh'}}>
+      
+    <div style={{gap: '15px'}}>
+
       <video
         ref={null}
-        style={{marginInline: 'auto', marginBlock: '', height: window.innerHeight - 150, width: '300px', borderRadius: '30px'}}
+        style={{marginInline: 'auto', height: window.innerHeight-150, width: '300px', borderRadius: '30px'}}
         id={'${id}'}
         src="https://res.cloudinary.com/codelife/video/upload/v1637805738/intro_l5ul1k.mp4"
         controls
         autoPlay
-        data-cld-colors='{ "base": "#0071   ba", "accent": "#db8226", "text": "#fff" }'
         data-cld-public-id={publicId}
         {...props}
-      />
+        />
+
+      <video
+        ref={null}
+        style={{marginInline: 'auto', height: window.innerHeight-150, width: '300px', borderRadius: '30px'}}
+        id={'${id}'}
+        src="https://res.cloudinary.com/codelife/video/upload/v1637805738/intro_l5ul1k.mp4"
+        controls
+        autoPlay
+        data-cld-public-id={publicId}
+        {...props}
+        />
+
+      <video
+        ref={null}
+        style={{marginInline: 'auto', height: window.innerHeight-150, width: '300px', borderRadius: '30px'}}
+        id={'${id}'}
+        src="https://res.cloudinary.com/codelife/video/upload/v1637805738/intro_l5ul1k.mp4"
+        controls
+        autoPlay
+        data-cld-public-id={publicId}
+        {...props}
+        />
+
     </div>
+  </div>
   )
 }
 
