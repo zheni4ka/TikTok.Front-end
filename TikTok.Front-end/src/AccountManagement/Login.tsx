@@ -7,6 +7,7 @@ const Login : React.FC = () => {
         <Form>
             <h3 style={{textAlign : 'center'}}>Login</h3>
 
+
             <Input placeholder="Login here" allowClear></Input>
             <Input placeholder="Password here" allowClear></Input>
         </Form>
