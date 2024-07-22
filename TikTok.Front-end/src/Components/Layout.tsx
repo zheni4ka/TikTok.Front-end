@@ -14,6 +14,7 @@ const Layout: React.FC = () => {
             <Header />
             
             <div style={{display: 'grid', gridTemplateColumns: '300px 1fr', height: window.innerHeight}}>
+
             
             <div style={{display: 'flex', flexDirection: 'column', width: 300}}>
                 <Sider/>
