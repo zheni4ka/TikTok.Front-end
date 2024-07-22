@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Layout as LayoutAntd, Input, Button, ConfigProvider, Modal } from 'antd';
 import { Link } from "react-router-dom";
 import { UserOutlined, UserAddOutlined, GoogleOutlined, TikTokOutlined } from '@ant-design/icons';
-import './Header.css';
 import Login from "../AccountManagement/Login";
 import Register from "../AccountManagement/Register";
 const { Header: HeaderAntd } = LayoutAntd;
