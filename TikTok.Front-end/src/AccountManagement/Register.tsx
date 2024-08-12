@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Form, Input, message } from 'antd';
 import axios from 'axios';
 import { UserOutlined, UserAddOutlined, GoogleOutlined, TikTokOutlined, LockOutlined } from '@ant-design/icons';
-import './Register.css';
+import '../Style/Register.css';
 const Register: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -47,7 +47,7 @@ const Register: React.FC = () => {
         </Form.Item>
         
         <Form.Item>
-          <Button type="primary" htmlType="submit">Register</Button>
+          <Button type="primary" htmlType="submit" href="#">Register</Button>
         </Form.Item>
       </Form>
 

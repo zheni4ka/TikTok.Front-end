@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Form, Input, message } from 'antd';
 import axios from 'axios';
 import { UserOutlined, UserAddOutlined, GoogleOutlined, TikTokOutlined, LockOutlined } from '@ant-design/icons';
-import './Login.css';
+import '../Style/Login.css';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');
