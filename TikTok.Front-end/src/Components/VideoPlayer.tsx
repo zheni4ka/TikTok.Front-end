@@ -29,6 +29,7 @@ const VideoPlayer :  React.FC = (id, publicId, ...props) => {
         controls
         
         autoPlay
+        
         data-cld-public-id={publicId}
         {...props}
         />
